@@ -12,7 +12,7 @@ Usage
 -----
 
 ```hcl
-module datomic {
+module s3-cloudfront {
   source = "github.com/fierceventures/terraform-s3-cloudfront"
   namespace = "todo-app"
   env = "staging"
