@@ -5,7 +5,7 @@ This module can be used to deploy a website configured s3 bucket and cloudfront 
 Module Input Variables
 ----------------------
 
-- `namespace` - Namespace for resources (project name).
+- `name` - Name prefix for resources (project name).
 - `env` - The environment 
 
 Usage 
