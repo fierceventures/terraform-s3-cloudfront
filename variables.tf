@@ -1,5 +1,5 @@
-variable "namespace" {
-  description = "The namespace"
+variable "name" {
+  description = "The name prefix for the resources"
 }
 
 variable "env" {

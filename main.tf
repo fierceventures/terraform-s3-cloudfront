@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "site" {
-  bucket = "${var.env}-${var.namespace}-site"
+  bucket = "${var.env}-${var.name}-site"
   acl = "public-read"
 
   website {
@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "site" {
 resource "aws_cloudfront_distribution" "s3_dist" {
   origin {
     domain_name = "${aws_s3_bucket.site.bucket_domain_name}"
-    origin_id = "${var.env}-${var.namespace}-site-origin"
+    origin_id = "${var.env}-${var.name}-site-origin"
   }
 
   enabled = true
@@ -25,7 +25,7 @@ resource "aws_cloudfront_distribution" "s3_dist" {
   default_cache_behavior {
     allowed_methods =  ["HEAD", "DELETE", "POST", "GET", "OPTIONS", "PUT", "PATCH"]
     cached_methods = ["GET", "HEAD"]
-    target_origin_id = "${var.env}-${var.namespace}-site-origin"
+    target_origin_id = "${var.env}-${var.name}-site-origin"
 
     forwarded_values {
       cookies {
