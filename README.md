@@ -21,7 +21,7 @@ module s3-cloudfront {
 
 Outputs
 -------
-- 
+- `distribution_id` - The distribution id
 
 Author
 ------
