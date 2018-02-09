@@ -22,6 +22,8 @@ module s3-cloudfront {
 Outputs
 -------
 - `distribution_id` - The distribution id
+- `domain_name` - The distribution domain name
+- `zone_id` - The distribution hosted zone id
 
 Author
 ------
