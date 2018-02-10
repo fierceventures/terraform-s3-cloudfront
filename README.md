@@ -14,7 +14,7 @@ Usage
 ```hcl
 module s3-cloudfront {
   source = "github.com/fierceventures/terraform-s3-cloudfront"
-  namespace = "todo-app"
+  name = "todo-app"
   env = "staging"
 }
 ```
