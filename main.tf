@@ -18,6 +18,8 @@ resource "aws_cloudfront_distribution" "s3_dist" {
     origin_id = "${var.env}-${var.name}-site-origin"
   }
 
+  aliases = "${var.aliases}"
+
   enabled = true
   is_ipv6_enabled = true
   default_root_object = "index.html"
