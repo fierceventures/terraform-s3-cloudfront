@@ -36,7 +36,7 @@ resource "aws_cloudfront_distribution" "s3_dist" {
       query_string = true
     }
 
-    viewer_protocol_policy = "allow-all"
+    viewer_protocol_policy = "redirect-to-https"
     max_ttl = 86400
     default_ttl = 3600
     min_ttl = 0
