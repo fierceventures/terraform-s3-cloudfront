@@ -10,3 +10,7 @@ variable "aliases" {
   type = "list"
   default = []
 }
+
+variable "cert" {
+  description = "The acm certificate arn"
+}

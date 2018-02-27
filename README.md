@@ -12,10 +12,15 @@ Usage
 -----
 
 ```hcl
+data "aws_acm_certificate" "cert" {
+  domain = "example.com"
+}
+
 module s3-cloudfront {
   source = "github.com/fierceventures/terraform-s3-cloudfront"
   name = "todo-app"
   env = "staging"
+  cert = "${data.aws_acm_certificate.cert.arn}"
 }
 ```
 
@@ -24,6 +29,7 @@ Outputs
 - `distribution_id` - The distribution id
 - `domain_name` - The distribution domain name
 - `zone_id` - The distribution hosted zone id
+- `cert` - The acm certificate arn
 
 Author
 ------
