@@ -30,6 +30,7 @@ Outputs
 - `domain_name` - The distribution domain name
 - `zone_id` - The distribution hosted zone id
 - `cert` - The acm certificate arn
+- `bucket_name` - The bucket name
 
 Author
 ------

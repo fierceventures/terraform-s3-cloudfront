@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "site" {
-  bucket = "${var.env}-${var.name}-site"
+  bucket_prefix = "${var.env}-${var.name}-site-"
   acl = "public-read"
 
   website {
