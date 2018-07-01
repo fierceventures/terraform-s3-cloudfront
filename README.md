@@ -24,6 +24,7 @@ Outputs
 - `distribution_id` - The distribution id
 - `domain_name` - The distribution domain name
 - `zone_id` - The distribution hosted zone id
+- `bucket_name` - The s3 bucket name
 
 Author
 ------
