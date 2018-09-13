@@ -46,10 +46,8 @@ resource "aws_cloudfront_distribution" "s3_dist" {
 
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"
-      locations = ["AU"]
+      restriction_type = "none"
     }
-
   }
 
   viewer_certificate {
