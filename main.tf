@@ -45,7 +45,7 @@ resource "aws_cloudfront_distribution" "s3_dist" {
   price_class = "PriceClass_200"
 
   restrictions {
-    geo_restrictions {
+    geo_restriction {
       restriction_type = "none"
     }
   }
